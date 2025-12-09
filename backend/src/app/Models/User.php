@@ -25,7 +25,7 @@ class User extends Authenticatable
         'address',       // For shipping/billing
         'phone',  // For contact
         'is_admin',      // For role management
-        'is_blocked',    // <-- ADDED: For blocking/unblocking users
+        'is_blocked',    
     ];
 
     /**
@@ -49,7 +49,7 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
             'is_admin' => 'boolean',
-            'is_blocked' => 'boolean', // <-- ADDED: Cast block status to boolean
+            'is_blocked' => 'boolean', 
         ];
     }
 
